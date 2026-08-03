@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#faf8ff"><title>A little something for you</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bloom" aria-hidden="true"><div class="flower-field" id="flowerField"></div></div>
+  <main>
+    <section class="hero section" aria-labelledby="hero-title">
+      <div class="hero-art" aria-hidden="true"><div class="stem stem-a"></div><div class="stem stem-b"></div><div class="stem stem-c"></div><div class="blossom blossom-a"></div><div class="blossom blossom-b"></div><div class="blossom blossom-c"></div></div>
+      <p class="eyebrow">12:47 am · unsent draft</p><h1 id="hero-title">okay, so…<br><em>here goes nothing</em></h1>
+      <a class="scroll-cue" href="#letter"><span>↓</span> Scroll down</a>
+    </section>
+    <section class="section letter-section reveal" id="letter" aria-labelledby="letter-title"><p class="eyebrow">please read this all the way through</p><h2 id="letter-title">Dear Jane,</h2><div class="letter-copy" id="letterCopy"></div><p class="signature" id="signature"></p></section>
+    <section class="section song-section reveal" aria-label="A song"><div class="spotify-wrap" id="spotifyWrap"></div></section>
+    <section class="section memories-section" aria-label="Photographs"><div class="collage" id="collage"></div></section>
+    <section class="section voice-section reveal" aria-label="Voice note"><div class="cassette"><div class="cassette-label"><span>for Jane</span><small>from akii</small></div><div class="reels"><div class="reel" id="reelOne"></div><div class="reel" id="reelTwo"></div></div><div class="cassette-controls"><button id="playButton" type="button" aria-label="Play voice note" aria-pressed="false"><span class="play-icon">▶</span></button><div class="audio-meta"><input id="progress" type="range" min="0" max="100" value="0" aria-label="Voice note progress"><div><span id="currentTime">0:00</span><span id="totalTime">0:00</span></div></div></div><audio id="voiceAudio" preload="metadata"></audio></div></section>
+  </main>
+  <script src="config.js"></script><script src="script.js"></script>
+</body></html>
